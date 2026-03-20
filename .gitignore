@@ -1,0 +1,126 @@
+# ─────────────────────────────────────────────────────────────────────────────
+#  wb-crop-disease-detector — .gitignore
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── Flutter / Dart ────────────────────────────────────────────────────────────
+app/.dart_tool/
+app/.flutter-plugins
+app/.flutter-plugins-dependencies
+app/.packages
+app/.pub-cache/
+app/.pub/
+app/build/
+app/android/.gradle/
+app/android/app/release/
+app/android/captures/
+app/android/local.properties
+app/android/key.properties
+app/android/app/google-services.json
+app/ios/
+app/macos/
+app/linux/
+app/windows/
+app/web/
+*.iml
+
+# ── Generated Dart ────────────────────────────────────────────────────────────
+*.g.dart
+*.freezed.dart
+*.mocks.dart
+
+# ── Model files (large binaries — distribute via GitHub Releases) ─────────────
+# Keep labels.txt but exclude .tflite binaries from the repo.
+# Upload trained model.tflite as a Release asset instead.
+*.tflite
+*.lite
+*.pb
+*.ckpt
+*.h5
+*.keras
+*.savedmodel/
+
+# Placeholder model (generated locally)
+training/placeholder_model/
+
+# ── Training data & ML artifacts ─────────────────────────────────────────────
+training/data/
+ml_pipeline/data/
+dataset/
+raw_data/
+*.zip
+*.tar.gz
+*.tar.bz2
+
+# Training outputs (keep scripts, exclude generated artifacts)
+training/logs/
+training/models/
+training/__pycache__/
+training/*.egg-info/
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+.env
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+*.egg-info/
+dist/
+*.egg
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# ── IDEs & Editors ────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Android Studio ────────────────────────────────────────────────────────────
+*.iws
+*.ipr
+local.properties
+.project
+.classpath
+.settings/
+bin/
+
+# ── Signing keys (NEVER commit these) ────────────────────────────────────────
+*.jks
+*.keystore
+key.properties
+release-keystore.jks
+
+# ── OS artifacts ──────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+
+# ── CI/CD temporary files ─────────────────────────────────────────────────────
+.cache/
+tmp/
+temp/

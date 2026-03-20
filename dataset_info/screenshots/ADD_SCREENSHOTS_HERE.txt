@@ -1,0 +1,11 @@
+Place real device screenshots here and submit a pull request.
+
+Required files:
+- splash.png
+- language.png
+- home.png
+- analyzing.png
+- result.png
+- app_flow.png   (composite of all screens, used in README header)
+
+See CONTRIBUTING.md → Adding Screenshots for instructions.

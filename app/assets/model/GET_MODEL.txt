@@ -1,0 +1,21 @@
+model.tflite — download from GitHub Releases
+============================================
+
+This directory must contain model.tflite before you can run or build the app.
+
+Option A: Download trained model from GitHub Releases
+  https://github.com/YOUR_USERNAME/wb-crop-disease-detector/releases/latest
+  → Download model.tflite → place it here
+
+Option B: Generate placeholder (build testing only, random predictions):
+  cd ../../training
+  pip install tensorflow
+  python generate_placeholder_model.py
+
+Option C: Train your own:
+  cd ../../training
+  pip install -r requirements.txt
+  python 01_download_and_prepare.py
+  python 02_train_model.py
+  python 03_convert_tflite.py
+  # model is auto-copied here on completion
